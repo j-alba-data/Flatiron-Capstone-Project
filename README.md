@@ -10,7 +10,7 @@ Best Fit Acquisitions (BFA) is a real-estate investment firm that, on behalf of 
 
 The data used for modeling is a CSV file which contains data for 2021-2022 home sales in King County, Washington. The file has 30,155 records and 25 fields. One record represents the sale entry for a single home. The field used as the regression target is the 'price' column which is the price of the home at the time of sale. This data was supplied by Flatiron School.
 
-<img src="images/simp_lin_reg.png" width="650" height="300" align="center"/>
+<img src="images/simp_lin_reg.png" width="700" height="300" align="center"/>
 
 #### Analysis
 First visual impressions of this simple linear regression model indicate the model does not do a very good job attempting to fit all the points as best as possible for this real world data. Also, the slope of the best fit line appears rather low. Addressing the aforementioned outliers may prove useful.
@@ -18,7 +18,7 @@ First visual impressions of this simple linear regression model indicate the mod
 ### Summary of Simple Linear Regression Model
 The model is statistically significant, as well as the coefficients, with an F-statistic p-value below a presumed alpha of 0.05. However, the model only explains 37% of the variance of the dependent variable 'price'. Each additional square foot in 'sqft_living' increases 'price' by 560 dollars. According to the mean squared error, on average the model is off by 711,342 dollars.
 
-<img src="images/simp_lin_reg_wout.png" width="650" height="300" align="center"/>
+<img src="images/simp_lin_reg_wout.png" width="700" height="300" align="center"/>
 
 #### Analysis
 Visual impressions of this new simple linear regression model prove promising as now the best fit line has a steeper slope.
@@ -27,7 +27,7 @@ Visual impressions of this new simple linear regression model prove promising as
 
 The model overall is statistically significant with the exception of the intercept. The model now explains 52.2% of the variance of 'price'; a 15% improvement! Each additional square foot in 'sqft_living' increases 'price' by 495 dollars. According to the mean squared error, on average the model is now off by 448,941 dollars; a 262,401 dollar improvement!
 
-<img src="images/fit_vs_col.png" width="650" height="300" align="center"/>
+<img src="images/fit_vs_col.png" width="700" height="300" align="center"/>
 
 #### Fitted versus 'sqft_living' Graph
 The graph above demonstrates the real values (blue) and the predicted values (red), with the particular predictor, ('sqft_living') on the x-axis. These predictions are made based on the entire model and not only the 'sqft_living' predictor which is why the predicted values are not a straight line.
