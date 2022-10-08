@@ -1,6 +1,6 @@
 # Capstone Regression Project
 
-<img src="house.png" width="600" height="600" align="center"/>
+<img src="house.png" width="600" height="300" align="center"/>
 
 ## Business Understanding
 
